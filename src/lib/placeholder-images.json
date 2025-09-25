@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "A modern and professional office environment, suggesting sophistication and business.",
+      "imageUrl": "https://images.unsplash.com/photo-1558959356-2f36c7322d3b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBvZmZpY2V8ZW58MHx8fHwxNzU4NzA5NzgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern office"
+    },
+    {
+      "id": "portfolio-1",
+      "description": "Conceptual design for a law firm's homepage, clean and authoritative.",
+      "imageUrl": "https://images.unsplash.com/photo-1638537690581-dc2192bfc7dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsYXclMjB3ZWJzaXRlfGVufDB8fHx8MTc1ODc5NzM2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "law website"
+    },
+    {
+      "id": "portfolio-2",
+      "description": "Conceptual design for a lawyer's profile page, focusing on expertise and trust.",
+      "imageUrl": "https://images.unsplash.com/photo-1688167217076-190b0ec8428f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsYXd5ZXIlMjBwcm9maWxlfGVufDB8fHx8MTc1ODc5NzM2M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "lawyer profile"
+    },
+    {
+      "id": "portfolio-3",
+      "description": "Conceptual design for a legal blog or publications section.",
+      "imageUrl": "https://images.unsplash.com/photo-1645484686977-dbddd9e1dc0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxsZWdhbCUyMGJsb2d8ZW58MHx8fHwxNzU4Nzk3MzY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "legal blog"
+    }
+  ]
 }
