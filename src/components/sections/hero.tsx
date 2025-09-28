@@ -1,13 +1,15 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import React from 'react';
+import { ArrowRight, Zap, Users, Award } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function Hero() {
-  const heroImage = PlaceHolderImages.find(p => p.id === 'hero-background');
+  const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-background');
 
   return (
-    <section className="relative h-[85vh] min-h-[600px] w-full">
+    <section className="relative h-[70vh] min-h-[500px] w-full text-white">
       {heroImage && (
         <Image
           src={heroImage.imageUrl}
@@ -18,19 +20,24 @@ export function Hero() {
           data-ai-hint={heroImage.imageHint}
         />
       )}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent" />
-      <div className="relative z-10 flex h-full items-end pb-16 text-center sm:items-center sm:pb-0">
-        <div className="container mx-auto px-4 text-white md:px-6">
-          <div className="mx-auto max-w-3xl animate-in fade-in slide-in-from-bottom-10 duration-1000">
-            <h1 className="font-headline text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-              Crafting Digital Prestige for the Modern Law Firm.
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
+      <div className="relative z-10 flex h-full flex-col items-center justify-center text-center">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-4xl mx-auto">
+            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-7xl drop-shadow-md font-headline">
+              High-Performance Legal Websites That Convert
             </h1>
-            <p className="mx-auto mt-6 max-w-2xl font-body text-lg text-gray-300 md:text-xl">
-              We build UI-optimized, high-performance websites that elevate your firm&apos;s online presence and attract discerning clients.
+            <p className="mt-6 text-lg leading-8 text-gray-200 drop-shadow-sm max-w-2xl mx-auto">
+              We specialize in creating lightning-fast, UI-optimized websites for law firms. Attract more clients, establish authority, and grow your practice with a website that works as hard as you do.
             </p>
-            <div className="mt-10 flex justify-center">
-              <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-                <Link href="#contact">Get a Free Consultation</Link>
+            <div className="mt-10 flex items-center justify-center gap-x-6">
+              <Button asChild size="lg">
+                <Link href="#contact">
+                  Start Your Project <ArrowRight className="ml-2" />
+                </Link>
+              </Button>
+              <Button asChild variant="outline" size="lg" className="bg-transparent border-white text-white hover:bg-white hover:text-primary">
+                <Link href="#portfolio">View Our Work</Link>
               </Button>
             </div>
           </div>
@@ -39,3 +46,5 @@ export function Hero() {
     </section>
   );
 }
+
+    

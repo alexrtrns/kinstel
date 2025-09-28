@@ -4,6 +4,7 @@ import { Hero } from '@/components/sections/hero';
 import { Services } from '@/components/sections/services';
 import { Portfolio } from '@/components/sections/portfolio';
 import { Cta } from '@/components/sections/cta';
+import { Stats } from '@/components/sections/stats';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         <Hero />
+        <Stats />
         <Services />
         <Portfolio />
         <Cta />
@@ -19,3 +21,5 @@ export default function Home() {
     </div>
   );
 }
+
+    
