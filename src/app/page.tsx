@@ -1,10 +1,22 @@
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { Hero } from '@/components/sections/hero';
-import { Services } from '@/components/sections/services';
-import { Portfolio } from '@/components/sections/portfolio';
-import { Cta } from '@/components/sections/cta';
-import { Stats } from '@/components/sections/stats';
+import dynamic from 'next/dynamic';
+import { Skeleton } from '@/components/ui/skeleton';
+
+const Stats = dynamic(() => import('@/components/sections/stats').then(m => m.Stats), {
+  loading: () => <Skeleton className="h-48 w-full" />,
+});
+const Services = dynamic(() => import('@/components/sections/services').then(m => m.Services), {
+  loading: () => <Skeleton className="h-96 w-full" />,
+});
+const Portfolio = dynamic(() => import('@/components/sections/portfolio').then(m => m.Portfolio), {
+    loading: () => <Skeleton className="h-[800px] w-full" />,
+});
+const Cta = dynamic(() => import('@/components/sections/cta').then(m => m.Cta), {
+    loading: () => <Skeleton className="h-96 w-full" />,
+});
+
 
 export default function Home() {
   return (
@@ -21,5 +33,3 @@ export default function Home() {
     </div>
   );
 }
-
-    

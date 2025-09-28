@@ -2,17 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { cn } from '@/lib/utils';
 import { Toaster } from '@/components/ui/toaster';
-import { Manrope, Lora } from 'next/font/google';
-
-const fontSans = Manrope({
-  subsets: ['latin'],
-  variable: '--font-sans',
-});
-
-const fontSerif = Lora({
-  subsets: ['latin'],
-  variable: '--font-serif',
-});
+import { fontSans, fontSerif } from '@/app/fonts';
 
 const siteConfig = {
   name: 'Kinstel',
