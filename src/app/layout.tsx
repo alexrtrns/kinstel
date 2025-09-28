@@ -69,7 +69,7 @@ export const metadata: Metadata = {
   manifest: `${siteConfig.url}/site.webmanifest`,
   verification: {
     google: 'EUyo27rp0wgUUiKu3bCvTLHZXqdCnwwBqLlMEDyc5UM',
-  },
+  },//for sitemap verify
 };
 
 export default function RootLayout({
