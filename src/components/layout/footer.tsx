@@ -14,7 +14,7 @@ export function Footer() {
               <span className="text-2xl font-bold font-headline">Kinstel</span>
             </Link>
             <p className="max-w-xs text-sm text-muted-foreground">
-              High-performance websites for modern law firms.
+              A website development company specializing in high-performance websites for modern law firms.
             </p>
           </div>
 

@@ -35,10 +35,10 @@ export function Portfolio() {
         <div className="mx-auto max-w-3xl text-center">
           <p className="font-semibold uppercase tracking-wider text-primary">Proven Results</p>
           <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-            Our Work Speaks for Itself
+            Our Lawyer Website Development Work
           </h2>
           <p className="mt-6 text-lg text-muted-foreground">
-            We've helped law firms across different practice areas increase their online presence and generate more qualified leads.
+            We've helped law firms across different practice areas increase their online presence and generate more qualified leads through expert website development.
           </p>
         </div>
         

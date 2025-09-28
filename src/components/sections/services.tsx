@@ -1,10 +1,10 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Palette, Zap, Library, Rocket, ShieldCheck, BarChart3 } from 'lucide-react';
+import { Palette, Rocket, BarChart3 } from 'lucide-react';
 
 const services = [
   {
     icon: <Palette className="h-8 w-8 text-primary" />,
-    title: 'Bespoke Web Design',
+    title: 'Lawyer Website Development',
     description: 'Visually stunning, custom websites that reflect the prestige and authority of your law firm.',
   },
   {
@@ -14,8 +14,8 @@ const services = [
   },
   {
     icon: <BarChart3 className="h-8 w-8 text-primary" />,
-    title: 'Content Strategy & SEO',
-    description: 'Targeted content strategies and SEO best practices to attract your ideal clientele.',
+    title: 'SEO for Law Firms',
+    description: 'As a skilled legal marketing firm, we use SEO best practices to attract your ideal clientele.',
   },
 ];
 
@@ -26,7 +26,7 @@ export function Services() {
         <div className="mx-auto max-w-3xl text-center">
           <p className="font-semibold uppercase tracking-wider text-primary">Our Expertise</p>
           <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-            Delivering Digital Excellence for the Legal Industry
+            A Web Development Company for the Legal Industry
           </h2>
           <p className="mt-6 text-lg text-muted-foreground">
             From initial design to ongoing optimization, we provide a comprehensive suite of services to ensure your firm's online success.

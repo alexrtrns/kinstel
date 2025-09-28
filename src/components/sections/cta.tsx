@@ -62,7 +62,7 @@ export function Cta() {
               Ready to Elevate Your Practice?
             </h2>
             <p className="text-lg text-muted-foreground">
-              Let&apos;s discuss how a bespoke website can transform your firm&apos;s digital presence. Fill out the form, and we&apos;ll be in touch to schedule a complimentary consultation.
+              Contact our website developers for lawyers. Let's discuss how a bespoke website can transform your firm's digital presence. Fill out the form, and we'll be in touch.
             </p>
           </div>
           <div className="w-full rounded-lg border bg-card p-6 shadow-lg animate-in fade-in slide-in-from-right-12 duration-500">
