@@ -21,12 +21,15 @@ const siteConfig = {
   description:
     'Kinstel is a web development agency specializing in UI-optimized, high-performance websites for law firms and lawyers.',
   keywords: [
-    'law firm websites',
-    'lawyer websites',
-    'legal web design',
-    'web development for lawyers',
-    'legal marketing',
-    'attorney websites',
+    'website development for lawyers',
+    'website developers for lawyers',
+    'lawyer website development',
+    'legal marketing firm',
+    'seo for lawyers',
+    'seo for law firm',
+    'website development company',
+    'website developers',
+    'web development company',
   ],
 };
 
