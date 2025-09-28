@@ -57,7 +57,7 @@ export function Cta() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid items-center gap-12 md:grid-cols-2">
           <div className="space-y-4 animate-in fade-in slide-in-from-left-12 duration-500">
-            <p className="font-semibold uppercase tracking-wider text-primary">Get In Touch</p>
+            <p className="font-semibold uppercase tracking-wider text-accent">Get In Touch</p>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
               Ready to Elevate Your Practice?
             </h2>

@@ -59,7 +59,7 @@ export function Header() {
       <header className="sticky top-0 z-50 w-full bg-transparent">
         <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
            <Link href="/" className="flex items-center gap-2">
-            <Scale className="h-7 w-7 text-primary" />
+            <Scale className="h-7 w-7 text-accent" />
             <span className="text-2xl font-bold font-headline text-foreground">
               Kinstel
             </span>
@@ -76,7 +76,7 @@ export function Header() {
       )}>
       <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
-          <Scale className="h-7 w-7 text-primary" />
+          <Scale className="h-7 w-7 text-accent" />
           <span className="text-2xl font-bold font-headline text-foreground">
             Kinstel
           </span>

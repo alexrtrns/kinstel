@@ -33,7 +33,7 @@ export function Portfolio() {
     <section id="portfolio" className="bg-background py-20 sm:py-28">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="font-semibold uppercase tracking-wider text-primary">Proven Results</p>
+          <p className="font-semibold uppercase tracking-wider text-accent">Proven Results</p>
           <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
             Our Lawyer Website Development Work
           </h2>
@@ -61,7 +61,7 @@ export function Portfolio() {
                 />
               </div>
               <CardContent className="flex flex-1 flex-col p-6">
-                <p className="mb-2 text-sm font-semibold text-primary">{item.category}</p>
+                <p className="mb-2 text-sm font-semibold text-accent">{item.category}</p>
                 <h3 className="mb-4 text-2xl font-headline font-semibold">{item.title}</h3>
                 <div className="flex flex-wrap gap-2 text-sm">
                   {item.metrics.map((metric, metricIndex) => (
@@ -72,7 +72,7 @@ export function Portfolio() {
                 </div>
               </CardContent>
               <CardFooter className="p-6 pt-0">
-                  <span className="flex items-center text-sm font-semibold text-primary opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                  <span className="flex items-center text-sm font-semibold text-accent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     View Case Study <ArrowRight className="ml-2 h-4 w-4" />
                   </span>
               </CardFooter>

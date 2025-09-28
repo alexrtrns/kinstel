@@ -2,19 +2,19 @@ import { Award, Users, Zap } from 'lucide-react';
 
 const stats = [
   {
-    icon: <Zap className="h-8 w-8 text-primary" />,
+    icon: <Zap className="h-8 w-8 text-accent" />,
     value: '98%',
     label: 'Page Speed Score',
     description: 'Blazing-fast load times to keep potential clients engaged.',
   },
   {
-    icon: <Users className="h-8 w-8 text-primary" />,
+    icon: <Users className="h-8 w-8 text-accent" />,
     value: '150+',
     label: 'Law Firms Served',
     description: 'Trusted by legal professionals across various practice areas.',
   },
   {
-    icon: <Award className="h-8 w-8 text-primary" />,
+    icon: <Award className="h-8 w-8 text-accent" />,
     value: '300%',
     label: 'Avg. Lead Increase',
     description: 'Our conversion-focused designs deliver measurable results.',

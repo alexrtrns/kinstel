@@ -10,7 +10,7 @@ export function Footer() {
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-3">
             <Link href="/" className="mb-4 flex items-center gap-2" aria-label="Kinstel Home">
-              <Scale className="h-7 w-7 text-primary" />
+              <Scale className="h-7 w-7 text-accent" />
               <span className="text-2xl font-bold font-headline">Kinstel</span>
             </Link>
             <p className="max-w-xs text-sm text-muted-foreground">
