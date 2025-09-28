@@ -56,7 +56,7 @@ export function Cta() {
     <section id="contact" className="bg-secondary py-20 sm:py-28">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid items-center gap-12 md:grid-cols-2">
-          <div className="space-y-4">
+          <div className="space-y-4 animate-in fade-in slide-in-from-left-12 duration-500">
             <p className="font-semibold uppercase tracking-wider text-primary">Get In Touch</p>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
               Ready to Elevate Your Practice?
@@ -65,7 +65,7 @@ export function Cta() {
               Let&apos;s discuss how a bespoke website can transform your firm&apos;s digital presence. Fill out the form, and we&apos;ll be in touch to schedule a complimentary consultation.
             </p>
           </div>
-          <div className="w-full rounded-lg border bg-card p-6 shadow-lg">
+          <div className="w-full rounded-lg border bg-card p-6 shadow-lg animate-in fade-in slide-in-from-right-12 duration-500">
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">

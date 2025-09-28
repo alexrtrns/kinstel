@@ -29,7 +29,8 @@ export function Stats() {
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="flex flex-col items-center p-6 text-center"
+              className="flex flex-col items-center p-6 text-center animate-in fade-in slide-in-from-bottom-5"
+              style={{animationDelay: `${index * 150}ms`, animationFillMode: 'backwards'}}
             >
               <div className="mb-4">{stat.icon}</div>
               <p className="text-5xl font-bold text-foreground">{stat.value}</p>
