@@ -10,7 +10,7 @@ export function Hero() {
       <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 md:grid-cols-2 md:px-6">
         <div className="max-w-xl animate-in fade-in slide-in-from-left-12 duration-500">
           <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl font-headline">
-            Website Development for Lawyers That Converts
+            Website Development for <span className="text-accent">Lawyers</span> That Converts
           </h1>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
             As a leading website development company, we specialize in creating lightning-fast, UI-optimized websites for law firms. Attract more clients, establish authority, and grow your practice.

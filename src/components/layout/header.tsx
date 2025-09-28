@@ -61,7 +61,7 @@ export function Header() {
            <Link href="/" className="flex items-center gap-2">
             <Scale className="h-7 w-7 text-accent" />
             <span className="text-2xl font-bold font-headline text-foreground">
-              Kinstel
+              <span className="text-accent">K</span>instel
             </span>
           </Link>
         </div>
@@ -78,7 +78,7 @@ export function Header() {
         <Link href="/" className="flex items-center gap-2">
           <Scale className="h-7 w-7 text-accent" />
           <span className="text-2xl font-bold font-headline text-foreground">
-            Kinstel
+            <span className="text-accent">K</span>instel
           </span>
         </Link>
 

@@ -26,7 +26,7 @@ export function Services() {
         <div className="mx-auto max-w-3xl text-center">
           <p className="font-semibold uppercase tracking-wider text-accent">Our Expertise</p>
           <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-            A Web Development Company for the Legal Industry
+            A Web Development Company for the <span className="text-accent">Legal Industry</span>
           </h2>
           <p className="mt-6 text-lg text-muted-foreground">
             From initial design to ongoing optimization, we provide a comprehensive suite of services to ensure your firm's online success.

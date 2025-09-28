@@ -35,7 +35,7 @@ export function Portfolio() {
         <div className="mx-auto max-w-3xl text-center">
           <p className="font-semibold uppercase tracking-wider text-accent">Proven Results</p>
           <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-            Our Lawyer Website Development Work
+            Our <span className="text-accent">Lawyer</span> Website Development Work
           </h2>
           <p className="mt-6 text-lg text-muted-foreground">
             We've helped law firms across different practice areas increase their online presence and generate more qualified leads through expert website development.
