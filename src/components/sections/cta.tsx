@@ -53,10 +53,11 @@ export function Cta() {
   }
 
   return (
-    <section id="contact" className="bg-background py-16 sm:py-24">
+    <section id="contact" className="bg-secondary py-20 sm:py-28">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid items-center gap-12 md:grid-cols-2">
           <div className="space-y-4">
+            <p className="font-semibold uppercase tracking-wider text-primary">Get In Touch</p>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
               Ready to Elevate Your Practice?
             </h2>
@@ -103,7 +104,7 @@ export function Cta() {
                       <FormItem>
                         <FormLabel>Email Address</FormLabel>
                         <FormControl>
-                          <Input placeholder="john.doe@email.com" {...field} />
+                          <Input type="email" placeholder="john.doe@email.com" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -116,7 +117,7 @@ export function Cta() {
                       <FormItem>
                         <FormLabel>Phone Number (Optional)</FormLabel>
                         <FormControl>
-                          <Input placeholder="(123) 456-7890" {...field} />
+                          <Input type="tel" placeholder="(123) 456-7890" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -132,7 +133,7 @@ export function Cta() {
                       <FormControl>
                         <Textarea
                           placeholder="Tell us about your project needs..."
-                          className="resize-none"
+                          className="min-h-[120px] resize-none"
                           {...field}
                         />
                       </FormControl>
@@ -140,7 +141,7 @@ export function Cta() {
                     </FormItem>
                   )}
                 />
-                <Button type="submit" className="w-full" disabled={isSubmitting}>
+                <Button type="submit" className="w-full" size="lg" disabled={isSubmitting}>
                   {isSubmitting ? (
                     <>
                       <Loader2 className="mr-2 h-4 w-4 animate-spin" />

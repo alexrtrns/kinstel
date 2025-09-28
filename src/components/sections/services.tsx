@@ -1,45 +1,48 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Palette, Zap, Library } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { Palette, Zap, Library, Rocket, ShieldCheck, BarChart3 } from 'lucide-react';
 
 const services = [
   {
-    icon: <Palette className="h-10 w-10 text-accent" />,
+    icon: <Palette className="h-8 w-8 text-primary" />,
     title: 'Bespoke Web Design',
-    description: 'We create visually stunning, custom websites that reflect the prestige and authority of your law firm.',
+    description: 'Visually stunning, custom websites that reflect the prestige and authority of your law firm.',
   },
   {
-    icon: <Zap className="h-10 w-10 text-accent" />,
+    icon: <Rocket className="h-8 w-8 text-primary" />,
     title: 'Performance Optimization',
-    description: 'Our sites are built for speed and reliability, ensuring a seamless experience for your visitors and better search rankings.',
+    description: 'Built for speed and reliability, ensuring a seamless experience and better search rankings.',
   },
   {
-    icon: <Library className="h-10 w-10 text-accent" />,
+    icon: <BarChart3 className="h-8 w-8 text-primary" />,
     title: 'Content Strategy & SEO',
-    description: 'We develop targeted content strategies and implement SEO best practices to attract your ideal clientele.',
+    description: 'Targeted content strategies and SEO best practices to attract your ideal clientele.',
   },
 ];
 
 export function Services() {
   return (
-    <section id="services" className="bg-background py-16 sm:py-24">
+    <section id="services" className="bg-secondary py-20 sm:py-28">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-            Our Expertise
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="font-semibold uppercase tracking-wider text-primary">Our Expertise</p>
+          <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
+            Delivering Digital Excellence for the Legal Industry
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground">
-            Delivering digital excellence for the legal industry.
+          <p className="mt-6 text-lg text-muted-foreground">
+            From initial design to ongoing optimization, we provide a comprehensive suite of services to ensure your firm's online success.
           </p>
         </div>
-        <div className="mt-12 grid gap-8 md:grid-cols-3">
+        <div className="mt-16 grid gap-8 md:grid-cols-3">
           {services.map((service, index) => (
-            <Card key={index} className="flex flex-col items-center p-6 text-center shadow-lg transition-shadow duration-300 hover:shadow-xl animate-in fade-in slide-in-from-bottom-5" style={{animationDelay: `${index * 150}ms`, animationFillMode: 'backwards'}}>
-              <CardHeader>
-                {service.icon}
-                <CardTitle className="mt-4 text-2xl">{service.title}</CardTitle>
+            <Card key={index} className="flex flex-col text-left p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-lg animate-in fade-in slide-in-from-bottom-5" style={{animationDelay: `${index * 150}ms`, animationFillMode: 'backwards'}}>
+              <CardHeader className="p-0">
+                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+                  {service.icon}
+                </div>
+                <CardTitle className="text-xl">{service.title}</CardTitle>
               </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">{service.description}</p>
+              <CardContent className="p-0 mt-2">
+                <CardDescription>{service.description}</CardDescription>
               </CardContent>
             </Card>
           ))}

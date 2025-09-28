@@ -5,6 +5,7 @@ import { Scale, Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { useState, useEffect } from 'react';
+import { cn } from '@/lib/utils';
 
 const navLinks = [
   { href: '#services', label: 'Services' },
@@ -35,29 +36,31 @@ export function Header() {
   }, []);
 
   const navContent = (
-    <nav className={`flex items-center gap-6 ${isMobile ? 'flex-col space-y-4 pt-8' : 'space-x-6'}`}>
+    <nav className={cn('flex items-center gap-1', isMobile ? 'flex-col space-y-4 pt-8' : 'space-x-4')}>
       {navLinks.map((link) => (
-        <Link
-          key={link.href}
-          href={link.href}
-          className="text-sm font-medium transition-colors hover:text-primary/80 dark:hover:text-primary-foreground/80"
-        >
-          {link.label}
-        </Link>
+        <Button key={link.href} variant="ghost" asChild>
+          <Link
+            href={link.href}
+            className="text-sm font-medium transition-colors"
+          >
+            {link.label}
+          </Link>
+        </Button>
       ))}
-       <Button asChild className={isMobile ? 'w-full' : ''}>
+       <Button asChild className={cn(isMobile && 'w-full', 'ml-4')}>
           <Link href="#contact">Inquire Now</Link>
         </Button>
     </nav>
   );
 
   if (!isClient) {
+    // Render a placeholder header on the server to avoid layout shift
     return (
       <header className="sticky top-0 z-50 w-full bg-transparent">
-        <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
+        <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
            <Link href="/" className="flex items-center gap-2">
-            <Scale className="h-6 w-6 text-accent" />
-            <span className="text-xl font-bold font-headline text-primary dark:text-primary-foreground">
+            <Scale className="h-7 w-7 text-primary" />
+            <span className="text-2xl font-bold font-headline text-foreground">
               Kinstel
             </span>
           </Link>
@@ -67,11 +70,14 @@ export function Header() {
   }
 
   return (
-    <header className={`sticky top-0 z-50 w-full transition-all duration-300 ${isScrolled ? 'border-b bg-background/95 backdrop-blur' : 'bg-transparent'}`}>
-      <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
+    <header className={cn(
+        'sticky top-0 z-50 w-full transition-all duration-300', 
+        isScrolled ? 'border-b border-border/40 bg-background/95 backdrop-blur-sm' : 'bg-transparent'
+      )}>
+      <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
-          <Scale className="h-6 w-6 text-accent" />
-          <span className="text-xl font-bold font-headline text-primary dark:text-primary-foreground">
+          <Scale className="h-7 w-7 text-primary" />
+          <span className="text-2xl font-bold font-headline text-foreground">
             Kinstel
           </span>
         </Link>
@@ -84,7 +90,7 @@ export function Header() {
                 <span className="sr-only">Toggle Menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="pt-16">
+            <SheetContent side="right" className="pt-16 w-full">
               {navContent}
             </SheetContent>
           </Sheet>

@@ -24,7 +24,7 @@ export function HeroIllustration(props: React.SVGProps<SVGSVGElement>) {
       <circle cx="80" cy="40" r="6" fill="#34d399" />
       
       {/* Content inside browser */}
-      <rect x="40" y="80" width="150" height="12" rx="4" fill="hsl(var(--primary))" />
+      <rect x="40" y="80" width="150" height="12" rx="4" fill="hsl(var(--foreground))" opacity="0.8"/>
       <rect x="40" y="110" width="400" height="8" rx="3" fill="hsl(var(--muted))" />
       <rect x="40" y="130" width="380" height="8" rx="3" fill="hsl(var(--muted))" />
       <rect x="40" y="150" width="350" height="8" rx="3" fill="hsl(var(--muted))" />
@@ -39,11 +39,11 @@ export function HeroIllustration(props: React.SVGProps<SVGSVGElement>) {
       
       {/* Floating card */}
       <g transform="translate(40, 200)">
-        <rect width="200" height="80" rx="8" fill="hsl(var(--background))" stroke="hsl(var(--border))" strokeWidth="1.5" />
-        <rect x="15" y="15" width="40" height="20" rx="4" fill="hsl(var(--accent))" opacity="0.3" />
-        <path d="M20 30 L35 18" stroke="hsl(var(--accent))" strokeWidth="2.5" strokeLinecap="round" />
+        <rect width="200" height="80" rx="8" fill="hsl(var(--card))" stroke="hsl(var(--border))" strokeWidth="1.5" />
+        <rect x="15" y="15" width="40" height="20" rx="4" fill="hsl(var(--primary))" opacity="0.2" />
+        <path d="M20 30 L35 18" stroke="hsl(var(--primary))" strokeWidth="2.5" strokeLinecap="round" />
         <text x="65" y="28" fontFamily="sans-serif" fontSize="12" fill="hsl(var(--foreground))" fontWeight="bold">Increased Leads</text>
-        <text x="65" y="48" fontFamily="sans-serif" fontSize="24" fill="hsl(var(--primary))" fontWeight="bold">+300%</text>
+        <text x="65" y="48" fontFamily="sans-serif" fontSize="24" fill="hsl(var(--foreground))" fontWeight="bold">+300%</text>
       </g>
     </svg>
   );
