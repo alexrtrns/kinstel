@@ -60,7 +60,7 @@ export function Header() {
         <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-6">
            <Link href="/" className="flex items-center gap-2">
             <span className="text-2xl font-bold font-headline text-foreground">
-              <span className="text-accent">K</span>instel
+              <span className=" text-accent">K</span>instel
             </span>
           </Link>
         </div>

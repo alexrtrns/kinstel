@@ -33,6 +33,9 @@ export function Footer() {
               <h3 className="font-semibold">Connect</h3>
                <div className="flex items-center space-x-4">
                   <Link href="#" className="text-muted-foreground hover:text-foreground" aria-label="Twitter">
+                    contact@kinstel.com
+                  </Link>
+                  <Link href="#" className="text-muted-foreground hover:text-foreground" aria-label="Twitter">
                     <Twitter className="h-5 w-5" />
                   </Link>
                   <Link href="#" className="text-muted-foreground hover:text-foreground" aria-label="LinkedIn">
