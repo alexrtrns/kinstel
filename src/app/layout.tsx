@@ -25,7 +25,7 @@ const siteConfig = {
 
 export const metadata: Metadata = {
   title: {
-    default: `${siteConfig.name} - UI-Optimized Websites for Law Firms`,
+    default: `${siteConfig.name} | Law Firm website development company`,
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     shortcut: '/favicon-16x16.png',
     apple: '/apple-touch-icon.png',
   },
-  manifest: `${siteConfig.url}/site.webmanifest`,
+  manifest: '/site.webmanifest',
   verification: {
     google: 'EUyo27rp0wgUUiKu3bCvTLHZXqdCnwwBqLlMEDyc5UM',
   },//for sitemap verify
