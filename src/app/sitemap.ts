@@ -5,10 +5,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // For a static site like this, the routes are simple.
   // For a dynamic site, you would fetch data to generate routes.
-  const routes = ['', '#services', '#portfolio', '#contact'].map((route) => ({
-    url: `${siteUrl}/${route}`,
+  const staticRoutes = [
+      '/',
+      '/contact',
+      '/privacy-policy',
+      '/terms-and-conditions',
+      '/refund-policy',
+      '/delivery-policy',
+  ];
+
+  const routes = staticRoutes.map((route) => ({
+    url: `${siteUrl}${route}`,
     lastModified: new Date().toISOString(),
   }));
 
-  return routes;
+  const sectionRoutes = ['#services', '#portfolio'].map((route) => ({
+      url: `${siteUrl}/${route}`,
+      lastModified: new Date().toISOString(),
+  }))
+
+
+  return [...routes, ...sectionRoutes];
 }
