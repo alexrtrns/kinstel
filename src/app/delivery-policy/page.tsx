@@ -16,42 +16,39 @@ export default function DeliveryPolicyPage() {
             <Header />
             <main className="flex-grow container mx-auto px-4 md:px-6 py-12">
                 <div className="prose prose-invert max-w-none mx-auto">
-                    <h1>Delivery Policy</h1>
+                    <h1>Delivery & Shipping Policy</h1>
                     <p>Last updated: July 29, 2024</p>
 
-                    <h2>1. Nature of Services</h2>
+                    <h2>1. Nature of Our Services</h2>
                     <p>
-                        Kinstel Solutions provides digital services, including web design, web development, and
-                        other digital solutions. We do not sell or ship any physical goods.
+                        Kinstel Solutions is a digital service provider specializing in web design, web development, and other digital solutions. We do not sell, ship, or deliver any physical products. All our services and deliverables are provided electronically.
                     </p>
 
-                    <h2>2. Project Delivery</h2>
+                    <h2>2. Service Delivery Method</h2>
                     <p>
-                        The delivery of our services is entirely electronic. Final deliverables, such as a
-                        completed website, will be deployed to a web hosting server agreed upon by both parties.
+                        The delivery of our services is conducted entirely through digital means. Final project deliverables, such as a completed website, are deployed to a web hosting server that is mutually agreed upon by Kinstel Solutions and the client.
                     </p>
                     <p>
-                        Project timelines and delivery milestones will be clearly outlined in the project
-                        agreement signed before the commencement of any work. Delivery is considered complete
-                        when the final version of the website is launched and accessible online.
+                        Upon project completion and final payment, all necessary credentials, source code, and administrative access will be transferred to the client through secure digital channels (e.g., encrypted email, secure cloud storage).
                     </p>
 
-                    <h2>3. Access to Deliverables</h2>
+                    <h2>3. Delivery Timeline</h2>
                     <p>
-                        Upon project completion and final payment, the client will be given full administrative
-                        access to the website and its associated accounts (e.g., hosting control panel, domain
-                        registrar), unless a separate maintenance agreement is in place.
+                        Since our services are project-based, there is no fixed delivery timeline applicable to all projects. Specific delivery timelines, milestones, and project phases will be clearly defined and agreed upon in the formal project agreement signed by both parties before any work begins.
                     </p>
 
-                    <h2>4. No Shipping</h2>
+                    <h2>4. Confirmation of Delivery</h2>
                     <p>
-                        As our services are digital, there are no shipping fees, shipping times, or physical
-                        deliveries involved. All work and communication will be handled electronically via email,
-                        project management tools, or video calls.
+                        A service is considered "delivered" when the final deliverables have been deployed to the live server and the client has been provided with the administrative access required to control the website or digital asset.
+                    </p>
+                    
+                    <h2>5. No Shipping Fees or Physical Delivery</h2>
+                    <p>
+                        As we exclusively provide digital services, there are no shipping fees, handling charges, or physical delivery involved. All communication, work-in-progress reviews, and final deliveries are managed electronically.
                     </p>
 
                     <p className="mt-8">
-                        For queries, reach out at <a href="mailto:contact@kinstel.com">contact@kinstel.com</a>.
+                        If you have any questions regarding our Delivery Policy, please contact us at <a href="mailto:contact@kinstel.com">contact@kinstel.com</a>.
                     </p>
                 </div>
             </main>
