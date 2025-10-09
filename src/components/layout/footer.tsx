@@ -21,7 +21,7 @@ export function Footer() {
                 33 Shivdham, Nijampur Malhaur, <br />
                 Gomti Nagar, Lucknow, UP 226001 <br/>
                 <a href="mailto:contact@kinstel.com" className="mt-2 hover:text-accent">contact@kinstel.com</a> <br/>
-                <a href="tel:+919415315450" className="mt-1 hover:text-accent">+91 9415315450</a>
+                <a href="tel:+919889988408" className="mt-1 hover:text-accent">+91 98899 88408</a>
              </address>
           </div>
 

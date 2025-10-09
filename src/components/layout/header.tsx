@@ -8,9 +8,9 @@ import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
-  { href: '#services', label: 'Services' },
-  { href: '#portfolio', label: 'Portfolio' },
-  { href: '#contact', label: 'Contact' },
+  { href: '/#services', label: 'Services' },
+  { href: '/#portfolio', label: 'Portfolio' },
+  { href: '/contact', label: 'Contact' },
 ];
 
 export function Header() {
@@ -48,7 +48,7 @@ export function Header() {
         </Button>
       ))}
        <Button asChild className={cn(isMobile && 'w-full', 'ml-4')}>
-          <Link href="#contact">Inquire Now</Link>
+          <Link href="/contact">Inquire Now</Link>
         </Button>
     </nav>
   );
