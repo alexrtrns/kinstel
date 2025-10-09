@@ -1,3 +1,4 @@
+
 import { type MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -12,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       '/terms-and-conditions',
       '/refund-policy',
       '/delivery-policy',
+      '/shipping'
   ];
 
   const routes = staticRoutes.map((route) => ({

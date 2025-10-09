@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import { Linkedin, Twitter, Github } from 'lucide-react';
 
@@ -37,7 +38,7 @@ export function Footer() {
               <Link href="/privacy-policy" className="text-muted-foreground hover:text-foreground">Privacy Policy</Link>
               <Link href="/terms-and-conditions" className="text-muted-foreground hover:text-foreground">Terms & Conditions</Link>
               <Link href="/refund-policy" className="text-muted-foreground hover:text-foreground">Refund Policy</Link>
-              <Link href="/delivery-policy" className="text-muted-foreground hover:text-foreground">Delivery Policy</Link>
+              <Link href="/shipping" className="text-muted-foreground hover:text-foreground">Shipping Policy</Link>
             </div>
             <div className="grid gap-2">
               <h3 className="font-semibold">Connect</h3>
