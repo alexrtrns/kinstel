@@ -1,4 +1,3 @@
-
 import Link from 'next/link';
 import { Linkedin, Twitter } from 'lucide-react';
 import { ClickToCallLink } from '../ui/click-to-call-link';
@@ -19,11 +18,13 @@ export function Footer() {
             <p className="max-w-xs text-sm text-muted-foreground mt-2">
              Kinstel Solutions (Udyam-UP-50-0230220) builds professional, fast, and credible websites for lawyers and law firms.
             </p>
-             <address className="mt-4 text-sm text-muted-foreground not-italic">
-                33 Shivdham, Nijampur Malhaur, <br />
-                Gomti Nagar, Lucknow, UP 226001 <br/>
-                <a href="mailto:contact@kinstel.com" className="mt-2 hover:text-accent">contact@kinstel.com</a> <br/>
-                <ClickToCallLink phoneNumber="+919889988408" className="mt-1 hover:text-accent">
+             <address className="mt-4 text-sm text-muted-foreground not-italic space-y-2">
+                <div>
+                  33 Shivdham, Nijampur Malhaur, <br />
+                  Gomti Nagar, Lucknow, UP 226001
+                </div>
+                <a href="mailto:contact@kinstel.com" className="inline-block hover:text-accent">contact@kinstel.com</a>
+                <ClickToCallLink phoneNumber="+919889988408" className="hover:text-accent">
                     +91 98899 88408
                 </ClickToCallLink>
              </address>
