@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
+import { SmartCtaButton } from '../ui/smart-cta-button';
 
 const navLinks = [
   { href: '/#services', label: 'Services' },
@@ -47,9 +48,13 @@ export function Header() {
           </Link>
         </Button>
       ))}
-       <Button asChild className={cn(isMobile && 'w-full', 'ml-4')}>
-          <Link href="/contact">Inquire Now</Link>
-        </Button>
+       <SmartCtaButton 
+          phoneNumber="+919889988408" 
+          email="contact@kinstel.com"
+          className={cn(isMobile && 'w-full', 'ml-4')}
+        >
+          Inquire Now
+        </SmartCtaButton>
     </nav>
   );
 
