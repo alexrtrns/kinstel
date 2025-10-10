@@ -1,6 +1,7 @@
 
 import Link from 'next/link';
 import { Linkedin, Twitter } from 'lucide-react';
+import { ClickToCallLink } from '../ui/click-to-call-link';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -22,7 +23,9 @@ export function Footer() {
                 33 Shivdham, Nijampur Malhaur, <br />
                 Gomti Nagar, Lucknow, UP 226001 <br/>
                 <a href="mailto:contact@kinstel.com" className="mt-2 hover:text-accent">contact@kinstel.com</a> <br/>
-                <a href="tel:+919889988408" className="mt-1 hover:text-accent">+91 98899 88408</a>
+                <ClickToCallLink phoneNumber="+919889988408" className="mt-1 hover:text-accent">
+                    +91 98899 88408
+                </ClickToCallLink>
              </address>
           </div>
 

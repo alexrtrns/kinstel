@@ -1,20 +1,21 @@
 import type { Metadata } from 'next';
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 import './globals.css';
 import { cn } from '@/lib/utils';
 import { Toaster } from '@/components/ui/toaster';
 import { fontSans, fontSerif } from '@/app/fonts';
+import { WhatsAppWidget } from '@/components/ui/whatsapp-widget';
 
 const siteConfig = {
-  name: 'Kinstel',
-  url: 'https://kinstel.com', // Replace with your actual domain
-  ogImage: 'https://kinstel.com/og-image.png', // Replace with your actual OG image URL
+  name: 'Kinstel Solutions',
+  url: 'https://kinstel.com',
+  ogImage: 'https://kinstel.com/og-image.png',
   description:
-    'Kinstel is a web development agency specializing in UI-optimized, high-performance websites for law firms and lawyers.',
+    'Kinstel Solutions builds professional, fast, and credible websites for lawyers and law firms. Book a free consultation with trusted website developers for lawyers.',
   keywords: [
-    'website development for lawyers',
-    'website developers for lawyers',
     'lawyer website development',
+    'law firm website development',
+    'website developers for lawyers',
     'legal marketing firm',
     'seo for lawyers',
     'seo for law firm',
@@ -25,8 +26,9 @@ const siteConfig = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} | Law Firm website development company`,
+    default: `Law Firm Website Development | Lawyer Website Developers | ${siteConfig.name}`,
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -60,7 +62,7 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
-    creator: '@kinstel', // Replace with your Twitter handle
+    creator: '@kinstels', 
   },
   icons: {
     icon: '/favicon.ico',
@@ -70,7 +72,7 @@ export const metadata: Metadata = {
   manifest: '/site.webmanifest',
   verification: {
     google: 'EUyo27rp0wgUUiKu3bCvTLHZXqdCnwwBqLlMEDyc5UM',
-  },//for sitemap verify
+  },
 };
 
 export default function RootLayout({
@@ -78,12 +80,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const whatsappMessage = "Hello! I'm visiting your website and would like to inquire about your law firm website development services.";
   return (
     <html lang="en" className="scroll-smooth dark">
       <body className={cn('min-h-screen bg-background font-sans antialiased', fontSans.variable, fontSerif.variable)}>
         {children}
         <Toaster />
         <Analytics />
+        <WhatsAppWidget phoneNumber="919889988408" message={whatsappMessage} />
       </body>
     </html>
   );

@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import { ClickToCallLink } from '@/components/ui/click-to-call-link';
 
 export const metadata: Metadata = {
     title: 'Kinstel Solutions | Contact Us',
@@ -39,9 +40,9 @@ export default function ContactPage() {
                         </div>
                         <div>
                             <h2 className="font-semibold">Phone</h2>
-                            <a href="tel:+919889988408" className="text-muted-foreground hover:text-accent">
+                             <ClickToCallLink phoneNumber="+919889988408" className="text-muted-foreground hover:text-accent">
                                 +91 98899 88408
-                            </a>
+                            </ClickToCallLink>
                         </div>
                     </div>
                     <div className="flex items-start gap-4">
