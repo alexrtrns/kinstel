@@ -3,6 +3,7 @@ import { Footer } from '@/components/layout/footer';
 import { Hero } from '@/components/sections/hero';
 import dynamic from 'next/dynamic';
 import { Skeleton } from '@/components/ui/skeleton';
+import { CallToAction } from '@/components/sections/call-to-action';
 
 const Stats = dynamic(() => import('@/components/sections/stats').then(m => m.Stats), {
   loading: () => <Skeleton className="h-48 w-full" />,
@@ -12,9 +13,6 @@ const Services = dynamic(() => import('@/components/sections/services').then(m =
 });
 const Portfolio = dynamic(() => import('@/components/sections/portfolio').then(m => m.Portfolio), {
     loading: () => <Skeleton className="h-[800px] w-full" />,
-});
-const Cta = dynamic(() => import('@/components/sections/cta').then(m => m.Cta), {
-    loading: () => <Skeleton className="h-96 w-full" />,
 });
 
 
@@ -27,7 +25,7 @@ export default function Home() {
         <Stats />
         <Services />
         <Portfolio />
-        <Cta />
+        <CallToAction />
       </main>
       <Footer />
     </div>

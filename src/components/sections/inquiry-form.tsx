@@ -18,8 +18,9 @@ import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import { inquirySchema, type InquiryFormValues } from '@/app/inquiry-schema';
 import { submitInquiryAction } from '@/app/actions';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '../ui/card';
 
-export function Cta() {
+export function InquiryForm() {
   const { toast } = useToast();
   const form = useForm<InquiryFormValues>({
     resolver: zodResolver(inquirySchema),
@@ -53,109 +54,100 @@ export function Cta() {
   }
 
   return (
-    <section id="contact" className="bg-secondary py-20 sm:py-28">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="grid items-center gap-12 md:grid-cols-2">
-          <div className="space-y-4 animate-in fade-in slide-in-from-left-12 duration-500">
-            <p className="font-semibold uppercase tracking-wider text-accent">Get In Touch</p>
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-              Ready to Elevate Your Practice?
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              Contact our website developers for <span className="text-accent">lawyers</span>. Let's discuss how a bespoke website can transform your firm's digital presence. Fill out the form, and we'll be in touch.
-            </p>
-          </div>
-          <div className="w-full rounded-lg border bg-card p-6 shadow-lg animate-in fade-in slide-in-from-right-12 duration-500">
+    <Card className="w-full shadow-lg">
+        <CardHeader>
+            <CardTitle>Send an Inquiry</CardTitle>
+            <CardDescription>Fill out the form and we'll be in touch shortly.</CardDescription>
+        </CardHeader>
+        <CardContent>
             <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                  <FormField
+                <FormField
                     control={form.control}
                     name="name"
                     render={({ field }) => (
-                      <FormItem>
+                    <FormItem>
                         <FormLabel>Full Name</FormLabel>
                         <FormControl>
-                          <Input placeholder="John Doe" {...field} />
+                        <Input placeholder="John Doe" {...field} />
                         </FormControl>
                         <FormMessage />
-                      </FormItem>
+                    </FormItem>
                     )}
-                  />
-                  <FormField
+                />
+                <FormField
                     control={form.control}
                     name="firm"
                     render={({ field }) => (
-                      <FormItem>
+                    <FormItem>
                         <FormLabel>Law Firm (Optional)</FormLabel>
                         <FormControl>
-                          <Input placeholder="Doe & Associates" {...field} />
+                        <Input placeholder="Doe & Associates" {...field} />
                         </FormControl>
                         <FormMessage />
-                      </FormItem>
+                    </FormItem>
                     )}
-                  />
+                />
                 </div>
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                  <FormField
+                <FormField
                     control={form.control}
                     name="email"
                     render={({ field }) => (
-                      <FormItem>
+                    <FormItem>
                         <FormLabel>Email Address</FormLabel>
                         <FormControl>
-                          <Input type="email" placeholder="john.doe@email.com" {...field} />
+                        <Input type="email" placeholder="john.doe@email.com" {...field} />
                         </FormControl>
                         <FormMessage />
-                      </FormItem>
+                    </FormItem>
                     )}
-                  />
-                  <FormField
+                />
+                <FormField
                     control={form.control}
                     name="phone"
                     render={({ field }) => (
-                      <FormItem>
+                    <FormItem>
                         <FormLabel>Phone Number (Optional)</FormLabel>
                         <FormControl>
-                          <Input type="tel" placeholder="(123) 456-7890" {...field} />
+                        <Input type="tel" placeholder="(123) 456-7890" {...field} />
                         </FormControl>
                         <FormMessage />
-                      </FormItem>
+                    </FormItem>
                     )}
-                  />
+                />
                 </div>
                 <FormField
-                  control={form.control}
-                  name="details"
-                  render={({ field }) => (
+                control={form.control}
+                name="details"
+                render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Project Details</FormLabel>
-                      <FormControl>
+                    <FormLabel>Project Details</FormLabel>
+                    <FormControl>
                         <Textarea
-                          placeholder="Tell us about your project needs..."
-                          className="min-h-[120px] resize-none"
-                          {...field}
+                        placeholder="Tell us about your project needs..."
+                        className="min-h-[120px] resize-none"
+                        {...field}
                         />
-                      </FormControl>
-                      <FormMessage />
+                    </FormControl>
+                    <FormMessage />
                     </FormItem>
-                  )}
+                )}
                 />
                 <Button type="submit" className="w-full" size="lg" disabled={isSubmitting}>
-                  {isSubmitting ? (
+                {isSubmitting ? (
                     <>
-                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                      Submitting...
+                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                    Submitting...
                     </>
-                  ) : (
+                ) : (
                     'Send Inquiry'
-                  )}
+                )}
                 </Button>
-              </form>
+            </form>
             </Form>
-          </div>
-        </div>
-      </div>
-    </section>
+        </CardContent>
+    </Card>
   );
 }
