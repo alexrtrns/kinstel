@@ -26,7 +26,7 @@ export function Services() {
         <div className="mx-auto max-w-3xl text-center">
           <p className="font-semibold uppercase tracking-wider text-accent">Built for Trust. Designed for Growth.</p>
           <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-            A Better <span className="text-accent">Digital Presence</span> for Your Firm
+            Strategic <span className="text-accent">Legal Marketing</span> Services
           </h2>
           <p className="mt-6 text-lg text-muted-foreground">
             We don’t just make websites—we craft digital first impressions that convert visitors into clients. Every project is built around speed, simplicity, and strategic design tailored for legal professionals.

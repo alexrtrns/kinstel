@@ -7,7 +7,7 @@ export function CallToAction() {
                 <div className="max-w-3xl mx-auto">
                     <p className="font-semibold uppercase tracking-wider text-accent">Let's Get Started</p>
                     <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-                        Ready to Elevate Your Practice?
+                        Start Your Legal Marketing Strategy Today
                     </h2>
                     <p className="mt-6 text-lg text-muted-foreground">
                         Your website should work as hard as you do. Partner with a trusted legal marketing firm and get expert SEO for lawyers. Book a free consultation to get started.

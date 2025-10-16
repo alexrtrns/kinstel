@@ -25,7 +25,7 @@ const siteConfig = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `Premier Law Firm & Legal Marketing Firm | ${siteConfig.name}`,
+    default: `Kinstel | Law Firm Marketing Firm ${siteConfig.name}`,
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,

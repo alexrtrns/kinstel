@@ -10,10 +10,10 @@ export function Hero() {
       <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 md:grid-cols-2 md:px-6">
         <div className="max-w-xl animate-in fade-in slide-in-from-left-12 duration-500">
           <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl font-headline">
-            A <span className="text-accent">Law Marketing Firm</span> That Gets You Noticed
+            Expert <span className="text-accent">Legal Marketing</span> for Law Firms
           </h1>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            Your website should build trust before you even speak to a client. As a specialized law marketing firm, we focus on law firm website development that blends professional design with performance to make your practice stand out.
+            As a specialized law marketing firm, we focus on law firm website development and SEO for lawyers. We blend professional design with performance to make your practice stand out.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <Button asChild size="lg" className="shadow-lg shadow-primary/20">
