@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Palette, Rocket, BarChart3, CheckCircle } from 'lucide-react';
+import { Palette, Rocket, CheckCircle } from 'lucide-react';
 
 const services = [
   {
@@ -15,7 +15,7 @@ const services = [
   {
     icon: <CheckCircle className="h-8 w-8 text-accent" />,
     title: 'Conversion-Focused UX',
-    description: 'With a focus on user experience, our website developers for lawyers ensure visitors can easily take action.',
+    description: 'With a focus on user experience and SEO for lawyers, our designs ensure visitors can easily take action.',
   },
 ];
 

@@ -11,12 +11,11 @@ const siteConfig = {
   url: 'https://kinstel.com',
   ogImage: 'https://kinstel.com/og-image.png',
   description:
-    'As a legal marketing firm, Kinstel Solutions offers expert law firm website development. We build fast, credible websites to help lawyers attract more clients. Contact our website developers for lawyers today.',
+    'As a legal marketing firm, Kinstel Solutions offers expert law firm website development and SEO for lawyers. We build fast, credible websites to help lawyers attract more clients.',
   keywords: [
     'law firm marketing firm',
     'law marketing firm',
     'law firm website development',
-    'website developers for lawyers',
     'legal marketing firm',
     'seo for lawyers',
     'website development company',
@@ -26,7 +25,7 @@ const siteConfig = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `Law Firm Marketing Firm | Law Marketing Firm | ${siteConfig.name}`,
+    default: `Premier Law Firm & Legal Marketing Firm | ${siteConfig.name}`,
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,

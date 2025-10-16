@@ -10,7 +10,7 @@ export function CallToAction() {
                         Ready to Elevate Your Practice?
                     </h2>
                     <p className="mt-6 text-lg text-muted-foreground">
-                        Your website should work as hard as you do. Partner with trusted website developers for lawyers and law firms. Book a free consultation to get started.
+                        Your website should work as hard as you do. Partner with a trusted legal marketing firm and get expert SEO for lawyers. Book a free consultation to get started.
                     </p>
                     <div className="mt-10">
                         <SmartCtaButton 
