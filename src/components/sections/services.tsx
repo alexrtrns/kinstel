@@ -1,21 +1,21 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Palette, Rocket, BarChart3 } from 'lucide-react';
+import { Palette, Rocket, BarChart3, CheckCircle } from 'lucide-react';
 
 const services = [
   {
     icon: <Palette className="h-8 w-8 text-accent" />,
-    title: 'Lawyer Website Development',
-    description: 'Visually stunning, custom websites that reflect the prestige and authority of your law firm.',
+    title: 'Credibility by Design',
+    description: 'Our law firm website development process focuses on clean layouts and strong visuals that reflect your professionalism.',
   },
   {
     icon: <Rocket className="h-8 w-8 text-accent" />,
-    title: 'Performance Optimization',
-    description: 'Built for speed and reliability, ensuring a seamless experience and better search rankings.',
+    title: 'Performance & SEO',
+    description: 'We build blazing-fast, SEO-friendly websites designed to rank higher and convert visitors into clients.',
   },
   {
-    icon: <BarChart3 className="h-8 w-8 text-accent" />,
-    title: 'SEO for Law Firms',
-    description: 'As a skilled legal marketing firm, we use SEO best practices to attract your ideal clientele.',
+    icon: <CheckCircle className="h-8 w-8 text-accent" />,
+    title: 'Conversion-Focused UX',
+    description: 'With a focus on user experience, our website developers for lawyers ensure visitors can easily take action.',
   },
 ];
 
@@ -24,12 +24,12 @@ export function Services() {
     <section id="services" className="bg-secondary py-20 sm:py-28">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="font-semibold uppercase tracking-wider text-accent">Our Expertise</p>
+          <p className="font-semibold uppercase tracking-wider text-accent">Built for Trust. Designed for Growth.</p>
           <h2 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-            A Web Development Company for the <span className="text-accent">Legal Industry</span>
+            A Better <span className="text-accent">Digital Presence</span> for Your Firm
           </h2>
           <p className="mt-6 text-lg text-muted-foreground">
-            From initial design to ongoing optimization, we provide a comprehensive suite of services to ensure your firm's online success.
+            We don’t just make websites—we craft digital first impressions that convert visitors into clients. Every project is built around speed, simplicity, and strategic design tailored for legal professionals.
           </p>
         </div>
         <div className="mt-16 grid gap-8 md:grid-cols-3">

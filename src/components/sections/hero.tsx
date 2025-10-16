@@ -10,19 +10,19 @@ export function Hero() {
       <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 md:grid-cols-2 md:px-6">
         <div className="max-w-xl animate-in fade-in slide-in-from-left-12 duration-500">
           <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl font-headline">
-            Website Development for <span className="text-accent">Lawyers</span> That Converts
+            A <span className="text-accent">Law Marketing Firm</span> That Gets You Noticed
           </h1>
           <p className="mt-6 text-lg leading-8 text-muted-foreground">
-            As a leading website development company, we specialize in creating lightning-fast, UI-optimized websites for law firms. Attract more clients, establish authority, and grow your practice.
+            Your website should build trust before you even speak to a client. As a specialized law marketing firm, we focus on law firm website development that blends professional design with performance to make your practice stand out.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <Button asChild size="lg" className="shadow-lg shadow-primary/20">
-              <Link href="#contact">
-                Start Your Project <ArrowRight className="ml-2" />
+              <Link href="/contact">
+                Book a Free Consultation <ArrowRight className="ml-2" />
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <Link href="#portfolio">View Our Work</Link>
+              <Link href="#portfolio">View Demo Designs</Link>
             </Button>
           </div>
         </div>
