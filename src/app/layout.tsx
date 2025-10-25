@@ -7,25 +7,24 @@ import { fontSans, fontSerif } from '@/app/fonts';
 import { WhatsAppWidget } from '@/components/ui/whatsapp-widget';
 
 const siteConfig = {
-  name: 'Kinstel Solutions',
+  name: 'Kinstel',
   url: 'https://kinstel.com',
   ogImage: 'https://kinstel.com/og-image.png',
   description:
-    'As a legal marketing firm, Kinstel Solutions offers expert law firm website development and SEO for lawyers. We build fast, credible websites to help lawyers attract more clients.',
+    'Kinstel empowers lawyers and law firms to elevate their practice with custom website development, proven SEO, and legally compliant marketing.',
   keywords: [
     'law firm marketing firm',
-    'law marketing firm',
-    'law firm website development',
     'legal marketing firm',
-    'seo for lawyers',
-    'website development company',
+    'website developers for lawyers',
+    'law firm website development',
+    'law firm seo'
   ],
 };
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `Kinstel | Law Firm Marketing Firm ${siteConfig.name}`,
+    default: 'Kinstel | Premier Law Firm Marketing Firm for Legal Growth',
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,
