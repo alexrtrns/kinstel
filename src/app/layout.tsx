@@ -36,7 +36,10 @@ export const metadata: Metadata = {
     },
   ],
   creator: 'Kinstel',
-  
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',
