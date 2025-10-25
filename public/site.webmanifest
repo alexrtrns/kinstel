@@ -1,11 +1,11 @@
 {
   "name": "Kinstel",
   "short_name": "Kinstel",
-  "description": "Kinstel is a web development agency specializing in UI-optimized, high-performance websites for law firms and lawyers.",
+  "description": "Kinstel empowers lawyers and law firms to elevate their practice with custom website development, proven SEO, and legally compliant marketing.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0a192f",
-  "theme_color": "#facc15",
+  "background_color": "#102A43",
+  "theme_color": "#D4AF37",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
