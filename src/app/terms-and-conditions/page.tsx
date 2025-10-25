@@ -4,10 +4,6 @@ import { Footer } from '@/components/layout/footer';
 
 export const metadata: Metadata = {
     title: 'Kinstel Solutions | Terms & Conditions',
-     robots: {
-        index: false,
-        follow: false,
-    }
 };
 
 export default function TermsAndConditionsPage() {

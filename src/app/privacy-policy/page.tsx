@@ -4,10 +4,6 @@ import { Footer } from '@/components/layout/footer';
 
 export const metadata: Metadata = {
     title: 'Kinstel Solutions | Privacy Policy',
-    robots: {
-        index: false,
-        follow: false,
-    }
 };
 
 export default function PrivacyPolicyPage() {
