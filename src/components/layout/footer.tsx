@@ -16,10 +16,11 @@ export function Footer() {
               </span>
             </Link>
             <p className="max-w-xs text-sm text-muted-foreground mt-2">
-             Kinstel Solutions (Udyam-UP-50-0230220) builds professional, fast, and credible websites for lawyers and law firms.
+             Kinstel builds professional, fast, and credible websites for lawyers and law firms.
             </p>
-             <address className="mt-4 text-sm text-muted-foreground not-italic space-y-2">
+             <address className="mt-4 text-sm  text-primary text-muted-foreground not-italic space-y-2">
                 <a href="mailto:contact@kinstel.com" className="inline-block hover:text-accent">contact@kinstel.com</a>
+                <br />
                 <ClickToCallLink phoneNumber="+919889988408" className="hover:text-accent">
                     +91 98899 88408
                 </ClickToCallLink>
