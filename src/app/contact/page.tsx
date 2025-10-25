@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone } from 'lucide-react';
 import { ClickToCallLink } from '@/components/ui/click-to-call-link';
 import { InquiryForm } from '@/components/sections/inquiry-form';
 
@@ -45,19 +45,6 @@ export default function ContactPage() {
                                  <ClickToCallLink phoneNumber="+919889988408" className="text-muted-foreground hover:text-accent">
                                     +91 98899 88408
                                 </ClickToCallLink>
-                            </div>
-                        </div>
-                        <div className="flex items-start gap-4">
-                            <div className="flex-shrink-0 mt-1">
-                                <MapPin className="h-6 w-6 text-accent" />
-                            </div>
-                            <div>
-                                <h2 className="font-semibold">Registered Address</h2>
-                                <p className="text-muted-foreground">
-                                    33 Shivdham, Nijampur Malhaur,
-                                    <br />
-                                    Gomti Nagar, Lucknow, UP 226001
-                                </p>
                             </div>
                         </div>
                          <div className="mt-12 text-sm text-muted-foreground border-t pt-8">

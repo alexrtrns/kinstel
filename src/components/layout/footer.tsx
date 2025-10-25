@@ -19,10 +19,6 @@ export function Footer() {
              Kinstel Solutions (Udyam-UP-50-0230220) builds professional, fast, and credible websites for lawyers and law firms.
             </p>
              <address className="mt-4 text-sm text-muted-foreground not-italic space-y-2">
-                <div>
-                  33 Shivdham, Nijampur Malhaur, <br />
-                  Gomti Nagar, Lucknow, UP 226001
-                </div>
                 <a href="mailto:contact@kinstel.com" className="inline-block hover:text-accent">contact@kinstel.com</a>
                 <ClickToCallLink phoneNumber="+919889988408" className="hover:text-accent">
                     +91 98899 88408
