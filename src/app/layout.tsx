@@ -5,37 +5,23 @@ import { cn } from '@/lib/utils';
 import { Toaster } from '@/components/ui/toaster';
 import { fontSans, fontSerif } from '@/app/fonts';
 import { WhatsAppWidget } from '@/components/ui/whatsapp-widget';
-
-const siteConfig = {
-  name: 'Kinstel',
-  url: 'https://kinstel.com',
-  ogImage: 'https://kinstel.com/og-image.png',
-  description:
-    'Kinstel empowers lawyers and law firms to elevate their practice with custom website development, proven SEO, and legally compliant marketing.',
-  keywords: [
-    'law firm marketing firm',
-    'legal marketing firm',
-    'website developers for lawyers',
-    'law firm website development',
-    'law firm seo'
-  ],
-};
+import { siteConfig } from '@/lib/site-config';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: 'Kinstel | Premier Law Firm Marketing Firm for Legal Growth',
+    default: siteConfig.title,
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,
   keywords: siteConfig.keywords,
   authors: [
     {
-      name: 'Kinstel',
+      name: siteConfig.name,
       url: siteConfig.url,
     },
   ],
-  creator: 'Kinstel',
+  creator: siteConfig.name,
   robots: {
     index: true,
     follow: true,
@@ -64,8 +50,11 @@ export const metadata: Metadata = {
     creator: '@kinstels', 
   },
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
+    icon: [
+        { url: '/favicon.ico', sizes: 'any' },
+        { url: '/favicon-16x16.png', type: 'image/png', sizes: '16x16' },
+        { url: '/favicon-32x32.png', type: 'image/png', sizes: '32x32' },
+    ],
     apple: '/apple-touch-icon.png',
   },
   manifest: '/site.webmanifest',
