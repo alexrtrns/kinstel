@@ -5,6 +5,10 @@ import { Footer } from '@/components/layout/footer';
 
 export const metadata: Metadata = {
     title: 'Kinstel Solutions | Shipping & Delivery Policy',
+    robots: {
+        index: false,
+        follow: false,
+    },
 };
 
 export default function ShippingPolicyPage() {
