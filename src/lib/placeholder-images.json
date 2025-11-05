@@ -23,6 +23,24 @@
       "description": "Conceptual design for a legal blog or publications section.",
       "imageUrl": "https://images.unsplash.com/photo-1645484686977-dbddd9e1dc0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxsZWdhbCUyMGJsb2d8ZW58MHx8fHwxNzU4Nzk3MzY0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "legal blog"
+    },
+    {
+      "id": "portfolio-4",
+      "description": "Clean and modern portfolio site for an advocate.",
+      "imageUrl": "https://picsum.photos/seed/4/800/600",
+      "imageHint": "advocate portfolio"
+    },
+    {
+      "id": "portfolio-5",
+      "description": "Corporate branding for an international law firm.",
+      "imageUrl": "https://images.unsplash.com/photo-1588253197754-420d2d818035?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb3Jwb3JhdGUlMjBsYXdmaXJtfGVufDB8fHx8MTc2MjMzMjYwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "corporate lawfirm"
+    },
+    {
+      "id": "portfolio-6",
+      "description": "Sleek portfolio design for a modern legal consultancy.",
+      "imageUrl": "https://images.unsplash.com/photo-1758519288417-d359ac3c494d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsZWdhbCUyMGNvbnN1bHRhbmN5fGVufDB8fHx8MTc2MjMzMjYwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "legal consultancy"
     }
   ]
 }
