@@ -7,30 +7,6 @@ import { ArrowRight } from "lucide-react";
 
 const portfolioItems = [
   {
-    image: PlaceHolderImages.find(p => p.id === 'portfolio-1')?.imageUrl ?? "https://picsum.photos/seed/1/800/600",
-    imageHint: PlaceHolderImages.find(p => p.id === 'portfolio-1')?.imageHint,
-    title: "Sterling & Associates",
-    category: "Personal Injury Law",
-    metrics: ["+150% Leads", "2.1s Load Time"],
-    link: "#"
-  },
-  {
-    image: PlaceHolderImages.find(p => p.id === 'portfolio-2')?.imageUrl ?? "https://picsum.photos/seed/2/800/600",
-    imageHint: PlaceHolderImages.find(p => p.id === 'portfolio-2')?.imageHint,
-    title: "Whitman Corporate Law",
-    category: "Corporate & Business Law",
-    metrics: ["+200% Traffic", "98% Performance"],
-    link: "#"
-  },
-  {
-    image: PlaceHolderImages.find(p => p.id === 'portfolio-3')?.imageUrl ?? "https://picsum.photos/seed/3/800/600",
-    imageHint: PlaceHolderImages.find(p => p.id === 'portfolio-3')?.imageHint,
-    title: "Rodriguez Family Law",
-    category: "Family & Divorce Law",
-    metrics: ["+180% Consultations", "Mobile First"],
-    link: "#"
-  },
-  {
     image: PlaceHolderImages.find(p => p.id === 'portfolio-4')?.imageUrl ?? "https://picsum.photos/seed/4/800/600",
     imageHint: PlaceHolderImages.find(p => p.id === 'portfolio-4')?.imageHint,
     title: "Advocate Ratna Singh",
