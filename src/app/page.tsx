@@ -5,6 +5,9 @@ import dynamic from 'next/dynamic';
 import { Skeleton } from '@/components/ui/skeleton';
 import { CallToAction } from '@/components/sections/call-to-action';
 
+const Stats = dynamic(() => import('@/components/sections/stats').then(m => m.Stats), {
+  loading: () => <Skeleton className="h-48 w-full" />,
+});
 const Services = dynamic(() => import('@/components/sections/services').then(m => m.Services), {
   loading: () => <Skeleton className="h-96 w-full" />,
 });
@@ -19,6 +22,7 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         <Hero />
+        <Stats />
         <Services />
         <Portfolio />
         <CallToAction />
