@@ -1,30 +1,29 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Badge } from "@/components/ui/badge";
 import { ArrowRight } from "lucide-react";
 
 const portfolioItems = [
   {
-    image: PlaceHolderImages.find(p => p.id === 'portfolio-4')?.imageUrl ?? "https://picsum.photos/seed/4/800/600",
-    imageHint: PlaceHolderImages.find(p => p.id === 'portfolio-4')?.imageHint,
+    image: "https://images.unsplash.com/photo-1589254065878-42c9da99709e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxsYXd5ZXJ8ZW58MHx8fHwxNzYyMzQwMjIxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    imageHint: "professional advocate",
     title: "Advocate Ratna Singh",
     category: "Independent Advocate",
     metrics: ["Modern Design", "Client-Focused"],
     link: "https://advratnasingh.vercel.app/"
   },
   {
-    image: PlaceHolderImages.find(p => p.id === 'portfolio-5')?.imageUrl ?? "https://picsum.photos/seed/5/800/600",
-    imageHint: PlaceHolderImages.find(p => p.id === 'portfolio-5')?.imageHint,
+    image: "https://images.unsplash.com/photo-1588253197754-420d2d818035?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb3Jwb3JhdGUlMjBsYXdmaXJtfGVufDB8fHx8MTc2MjMzMjYwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+    imageHint: "corporate lawfirm",
     title: "Ababneh & Associates",
     category: "International Law Firm",
     metrics: ["Multilingual", "Corporate Branding"],
     link: "https://ababneh-law.vercel.app/"
   },
   {
-    image: PlaceHolderImages.find(p => p.id === 'portfolio-6')?.imageUrl ?? "https://picsum.photos/seed/6/800/600",
-    imageHint: PlaceHolderImages.find(p => p.id === 'portfolio-6')?.imageHint,
+    image: "https://images.unsplash.com/photo-1758519288417-d359ac3c494d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsZWdhbCUyMGNvbnN1bHRhbmN5fGVufDB8fHx8MTc2MjMzMjYwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+    imageHint: "legal consultancy",
     title: "Advonex",
     category: "Modern Legal Consultancy",
     metrics: ["Sleek UI", "Fast Load Times"],
